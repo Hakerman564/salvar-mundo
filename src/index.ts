@@ -1,1 +1,1 @@
-﻿
+﻿import { Gamepro, Pantalla, ControllerPlay } from "./game";

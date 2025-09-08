@@ -7,12 +7,16 @@ export class index {
         this.game = new Gamepro();
     }
 
-    public main(): void {
+    public async main(): Promise<void> {
        while (true)
        {
-           if (this.game.start()) {
+           if (await this.game.start()) {
                break;
            }
        }
     }
 }
+
+(async () => {
+    await new index().main();
+})();
